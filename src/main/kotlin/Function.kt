@@ -11,6 +11,8 @@ fun searchList(){
 
 }
 fun findIndex(listData: List<Int>, number: Int) {
+    //    indices = starting from 0 and going up to size - 1.
+    //    This ensures that you access each element in the list correctly.
     for (i in listData.indices ){
         if (number == listData[i]){
             return println("the index of ${listData[i]} is ${i} ")
