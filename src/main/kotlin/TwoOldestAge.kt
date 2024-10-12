@@ -5,9 +5,10 @@ fun age(){
 }
 
 fun twoOldestAges(ages: List<Int>): List<Int> {
-//    Kita menggunakan sortedDescending() untuk mengurutkan list dari yang terbesar ke terkecil.
-//    Kemudian kita menggunakan take(2) untuk mengambil dua elemen pertama (yang merupakan dua usia tertua).
-//    return ages.sortedDescending().take(2)
+//    sorted(): Ini mengurutkan list dari nilai terkecil ke terbesar.
+//    takeLast(2): Ini mengambil dua elemen terakhir dari list yang sudah diurutkan, yang merupakan dua nilai terbesar.
+//    return ages.sorted().takeLast(2)
+
     var max = 0
     var min = 0
     for (age in ages){
